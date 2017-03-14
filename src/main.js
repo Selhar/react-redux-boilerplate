@@ -1,5 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
+import {Provider} from 'react-redux';
+import Index from './components/index';
+import store from './store';
+
 const css = require('./main.scss');
 
-console.log("test");
+render(
+  <Provider store={store}>
+    <Index />
+  </Provider>,
+  
+  document.getElementById('main')
+);
