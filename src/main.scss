@@ -1,16 +1,2 @@
-/************* 
-    Globals
- ************/
-html,
-body {
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-}
-* {
-    box-sizing: border-box;
-}
-
-section {
-    height: 100%;
-}
+//custom normalize, global rules are in there
+@import "./helpers/normalize.css";
